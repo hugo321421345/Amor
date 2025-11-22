@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hugo ❤️ Sara - 6 Años</title>
+<style>
+body{
+  font-family: 'Georgia', serif;
+  background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+  margin:0; padding:0; color:#4a1f2d;
+  overflow:hidden;
+}
+.container{
+  max-width:800px; margin:0 auto; padding:24px; text-align:center;
+  animation: fadeIn 2s ease-in-out;
+}
+.card{
+  background:rgba(255,255,255,0.85);
+  border-radius:22px;
+  padding:26px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+  animation: popIn 1.5s ease-out;
+}
+h1{font-size:2rem;margin-bottom:14px;}
+p{font-size:1.15rem;line-height:1.6;}
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 22px;
+  border-radius:30px;
+  text-decoration:none;
+  background:#b83259;
+  color:#fff;
+  font-weight:bold;
+  font-size:1rem;
+  animation: pulse 2.5s infinite;
+}
+.heart{
+  font-size:3.2rem;
+  margin:14px 0;
+  animation: heartbeat 2s infinite;
+}
+.footer{
+  margin-top:20px;
+  font-size:0.95rem;
+  color:#5b2a38;
+}
+
+/* Floating hearts animation */
+.heart-float {
+  position: absolute;
+  color: rgba(255,255,255,0.7);
+  font-size: 24px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) scale(1); opacity:1; }
+  100% { transform: translateY(-10vh) scale(1.5); opacity:0; }
+}
+
+@keyframes fadeIn {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+@keyframes popIn {
+  0%{transform:scale(0.8); opacity:0;}
+  100%{transform:scale(1); opacity:1;}
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+
+@keyframes pulse {
+  0%{transform:scale(1);}
+  50%{transform:scale(1.07);}
+  100%{transform:scale(1);}
+}
+</style>
+</head>
+<body>
+
+<!-- Floating hearts -->
+<div class="heart-float" style="left:10%; animation-delay:0s;">❤️</div>
+<div class="heart-float" style="left:25%; animation-delay:1s;">❤️</div>
+<div class="heart-float" style="left:50%; animation-delay:2s;">❤️</div>
+<div class="heart-float" style="left:70%; animation-delay:3s;">❤️</div>
+<div class="heart-float" style="left:85%; animation-delay:1.5s;">❤️</div>
+
+<div class="container">
+  <div class="card">
+    <div class="heart">❤️</div>
+    <h1>Hugo & Sara</h1>
+    <p>Hoy celebramos algo muy especial:<br><strong>6 años juntos</strong>.</p>
+    <p>Cada momento, cada risa, cada abrazo... ha sido parte de esta historia tan bonita que seguimos construyendo.</p>
+    <p>Gracias por ser tú, por lo que somos, y por todo lo que nos queda por vivir.</p>
+    <a class="btn" href="carta_amor.html">Leer mi carta para ti</a>
+  </div>
+  <div class="footer">Con todo mi amor — Hugo</div>
+</div>
+</body>
+</html>
